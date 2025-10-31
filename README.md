@@ -46,10 +46,10 @@ git clone https://github.com/DarrylNA/CodingCamp-27Oct2025-darrylarkann.git
 ## 📝 Cara Penggunaan
 
 1. Masukkan tugas di kolom input
-2. Pilih tanggal jatuh tempo
+2. Tentukan tanggal dari tugas
 3. Klik tombol "Add Mission"
 4. Klik checkbox untuk menandai tugas selesai
-5. Gunakan tombol filter untuk melihat kategori tugas berbeda
+5. Gunakan tombol filter(Active & Completed) untuk melihat kategori tugas berbeda
 6. Klik "Delete" untuk menghapus tugas
 
 ## 👨‍💻 Pembuat
