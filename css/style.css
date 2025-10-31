@@ -105,3 +105,51 @@ body::before {
     color: dark;
 }
 
+.btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-add {
+    background: #e60012;
+    color: #ffffff;
+    border: 2px solid #e60012;
+}
+
+.btn-add:hover {
+    background: #ff1a23;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(230, 0, 18, 0.5);
+}
