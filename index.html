@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Take Your Time</h1>
+            <p class="subtitle">Daily Mission Log</p>
+        </header>
+
+    <div class="form-container">
+        <form id="todoForm" class="todo-form">
+            <div class="dorm-group">
+                <input
+                type="text"
+                id="todoInput"
+                class="input-field"
+                placeholder="Enter your activities..."
+                required>
+            </div>
+            <div class="form-group">
+                <input
+                type="date"
+                id="dateInput"
+                class="input-field date-input"
+                required>
+            </div>
+            <button type="submit" class="btn btn-add">
+                <span>Add Mission!!</span>
+            </button>
+        </form>
+    </div>
+
+    <div class="filter-container">
+        <button class="btn btn-filter active" data-filter="all">All</button>
+        <button class="btn btn-filter" data-filter="active">Active</button>
+        <button class="btn btn-filter" data-filter="completed">Completed</button>
+    </div>
+
+    <div id="todoList" class="todo-list"></div>
+
+    <div class="empty-state" id="emptyState">
+        <p>No missions yet. Time to make your mark!</p>
+    </div>
+    
+    </div>
+</body>
+</html>
