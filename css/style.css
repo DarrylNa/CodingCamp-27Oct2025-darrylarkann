@@ -153,3 +153,31 @@ body::before {
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(230, 0, 18, 0.5);
 }
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    background: transparent;
+    color: #b0b0b0;
+    border: 2px solid #b0b0b0;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+}
+
+.btn-filter:hover {
+    border-color: #ffd700;
+    color: #ffd700;
+}
+
+.btn-filter.active {
+    background: #e60012;
+    color: #ffffff;
+    border-color: #e60012;
+}
+
