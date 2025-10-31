@@ -22,3 +22,25 @@ filterButtons.forEach(button =>{
     });
 });
 
+function addTodo() {
+    const text = todoInput.value.trim();
+    const date = dateInput.value;
+
+    if (text === '' || date === '') {
+        alert('Please fill in all fields, nyaa!');
+        return;
+    }
+
+    const todo = {
+        id: Date.now(),
+        text: text,
+        date: date,
+        completed: false
+    };
+
+    todos.push(todo);
+    todoInput.value = '';
+    dateInput.value = '';
+    renderTodos()
+}
+
