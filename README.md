@@ -8,22 +8,17 @@ Aplikasi "To-Do List" sebagai tugas praktik dari RevoU berbasis web dengan desai
 - ✅ **Tandai Selesai** - Centang tugas yang sudah selesai
 - 🗑️ **Hapus Tugas** - Hapus tugas dari daftar
 - 🔍 **Filter Tampilan** - Lihat semua, aktif, atau tugas yang selesai(completed)
-- 📱 **Desain Responsif** - Berfungsi di desktop dan mobile
 
 ## 🎨 Tema Desain
 
-Palet warna terinspirasi Persona 5:
+Palet warna terinspirasi dari Persona 5:
 - **Merah Utama**: #E60012
 - **Latar Belakang Hitam**: #000000
 - **Aksen Emas**: #FFD700
 
-## 🚀 Demo Langsung
-
-🔗 [Lihat Website](url-github-pages-kamu)
-
 ## 📂 Struktur Project
 
-Sesuai dengan arahan yang diberikan oleh brief project RevoU yaitu seperti berikut:
+Sesuai dengan arahan yang diberikan oleh brief mini project RevoU yaitu seperti berikut:
 ```
 CodingCamp-27Oct2025-namakamu/
 ├── index.html
