@@ -44,3 +44,30 @@ function addTodo() {
     renderTodos()
 }
 
+function deleteTodo(id) {
+    todos = todos.filter(todo => todo.id !==id);
+    renderTodos();
+}
+
+function toggleTodo(id) {
+    const todo = todos.find(t => t.id === id);
+    if (todo) {
+        todo.completed = !todo.cmpleted;
+        renderTodos();
+    }
+}
+
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    return date.toLocaleDateString('id-ID', options);
+}
+
+function getFilteredTodos(){
+    if (currentFilter === 'active') {
+        return todos.filter(todo => !todo.completed);
+    } else if (currentFilter === 'completed') {
+        return todos.filter(todo => todo.completed);
+    }
+    return todos;
+}
