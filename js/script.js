@@ -60,7 +60,7 @@ function toggleTodo(id) {
 function formatDate(dateString) {
     const date = new Date(dateString);
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return date.toLocaleDateString('id-ID', options);
+    return date.toLocaleDateString('en-US', options);
 }
 
 function getFilteredTodos(){
@@ -71,3 +71,35 @@ function getFilteredTodos(){
     }
     return todos;
 }
+
+function renderTodos() {
+        const filteredTodos = getFilteredTodos();
+            
+        if (filteredTodos.length === 0) {
+            todoList.innerHTML = '';
+            emptyState.classList.add('show');
+            return;
+        }
+
+        emptyState.classList.remove('show');
+            
+        todoList.innerHTML = filteredTodos.map(todo => `
+            <div class="todo-item ${todo.completed ? 'completed' : ''}">
+                <input 
+                    type="checkbox" 
+                    class="todo-checkbox" 
+                    ${todo.completed ? 'checked' : ''}
+                    onchange="toggleTodo(${todo.id})"
+                >
+                <div class="todo-content">
+                    <div class="todo-text">${todo.text}</div>
+                    <div class="todo-date">📅 ${formatDate(todo.date)}</div>
+                </div>
+                <button class="btn btn-delete" onclick="deleteTodo(${todo.id})">
+                    <span>Delete</span>
+                </button>
+            </div>
+        `).join('');
+    }
+
+renderTodos();
