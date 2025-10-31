@@ -20,7 +20,7 @@ Palet warna terinspirasi dari Persona 5:
 
 Sesuai dengan arahan yang diberikan oleh brief mini project RevoU yaitu seperti berikut:
 ```
-CodingCamp-27Oct2025-namakamu/
+CodingCamp-27Oct2025-darrylarkann/
 ├── index.html
 ├── css/
 │   └── style.css
