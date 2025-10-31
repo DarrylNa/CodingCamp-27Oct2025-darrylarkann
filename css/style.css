@@ -53,3 +53,55 @@ body::before {
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
     margin-bottom: 10px;
 }
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ffd700;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+.form-container {
+    background: rgba(26, 26, 26, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #e60012;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(230, 0, 18, 0.3);
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 15px 20px;
+    font-size: 1rem;
+    background: #000000;
+    border: 2px solid #e60012;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.input-field::placeholder {
+    color: #b0b0b0;
+}
+
+.date-input {
+    color: dark;
+}
+
