@@ -43,7 +43,7 @@ git clone https://github.com/DarrylNA/CodingCamp-27Oct2025-darrylarkann.git
 
 2. Buka file `index.html` di browser atau dibuka menggunakan Visual Studio Code (VSCode)
 
-## 📝 Cara Penggunaan
+## 📝 Cara Penggunaan To-Do List
 
 1. Masukkan tugas di kolom input
 2. Tentukan tanggal dari tugas
@@ -57,6 +57,6 @@ git clone https://github.com/DarrylNA/CodingCamp-27Oct2025-darrylarkann.git
 **Nama Kamu**
 - GitHub: [@DarrylNA](https://github.com/DarrylNA)
 
-## 📄 Lisensi
+## 📄 Tujuan Project
 
 Project ini dibuat untuk tujuan edukasi sebagai bagian dari tugas RevoU coding bootcamp.
